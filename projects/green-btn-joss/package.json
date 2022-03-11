@@ -1,0 +1,19 @@
+{
+  "name": "green-btn-joss",
+  "version": "0.0.1",
+  "description": "boton verde de prueba",
+  "keywords": [
+    "bonton",
+    "verde",
+    "prueba",
+    "libreria",
+    "josseline"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^12.1.0",
+    "@angular/core": "^12.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  }
+}

@@ -105,6 +105,68 @@
           }
         }
       }
+    },
+    "green-button": {
+      "projectType": "library",
+      "root": "projects/green-button",
+      "sourceRoot": "projects/green-button/src",
+      "prefix": "btng",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/green-button/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/green-button/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/green-button/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/green-button/src/test.ts",
+            "tsConfig": "projects/green-button/tsconfig.spec.json",
+            "karmaConfig": "projects/green-button/karma.conf.js"
+          }
+        }
+      }
+    },
+    "green-btn-joss": {
+      "projectType": "library",
+      "root": "projects/green-btn-joss",
+      "sourceRoot": "projects/green-btn-joss/src",
+      "prefix": "gb-joss",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/green-btn-joss/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/green-btn-joss/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/green-btn-joss/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/green-btn-joss/src/test.ts",
+            "tsConfig": "projects/green-btn-joss/tsconfig.spec.json",
+            "karmaConfig": "projects/green-btn-joss/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "my-library"

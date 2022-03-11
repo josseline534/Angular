@@ -7,6 +7,16 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitReturns": true,
+    "paths": {
+      "green-btn-joss": [
+        "dist/green-btn-joss/green-btn-joss",
+        "dist/green-btn-joss"
+      ],
+      "green-button": [
+        "dist/green-button/green-button",
+        "dist/green-button"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
